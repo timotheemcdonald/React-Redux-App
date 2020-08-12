@@ -1,4 +1,4 @@
-import {FETCHING_GOATS_START, FETCHING_GOATS_SUCCESS} from '../actions'
+import {FETCHING_GOATS_START, FETCHING_GOATS_SUCCESS } from '../actions'
 
 const initialState = {
     photo: '',
