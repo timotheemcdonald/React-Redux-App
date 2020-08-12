@@ -14,6 +14,21 @@ padding:2.5%;
 border-radius:10px;
 border:5px solid #f19645;
 `
+
+const QuoteBox = styled.div`
+font-family: 'Libre Baskerville', serif;
+margin: 2% auto;
+background-color:#f8f1d4;
+color:#fe2d36;
+/* width:40%;
+height:25%; */
+width:500px;
+height:125px;
+padding:1.5%;
+border-radius:10px;
+border:5px solid #f19645;
+`
+
 const StyledQuote = styled.div`
 display:flex;
 justify-content:flex-start;
@@ -32,6 +47,13 @@ max-width:50%;
 height:auto;
 border-radius:50%;
 margin:5%;
+`
+const QuoteContainer = styled.div`
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px;
+margin:10px;
 `
 
 const Goats = (props) => {
@@ -54,12 +76,19 @@ const Goats = (props) => {
                 ) : null}
             </div>
             </StyledTitle>
-            <StyledTitle>
+
+            <QuoteContainer>
+            <QuoteBox>
                 <StyledQuote>
                 “Men have forgotten this truth,” said the fox. “But you must not forget it. You become responsible, forever, for what you have tamed.” </StyledQuote>
-                <StyledAuthor> - Antoine de Saint Exupery</StyledAuthor>
-            </StyledTitle>
-
+                <StyledAuthor> - Antoine de Saint Exupery, The Little Prince</StyledAuthor>
+                </QuoteBox>
+            <QuoteBox>
+                <StyledQuote>
+                “A prince must imitate the fox and the lion, for the lion cannot protect himself from traps, and the fox cannot defend himself from wolves. One must therefore be a fox to recognize traps, and a lion to frighten wolves.” </StyledQuote>
+                <StyledAuthor> - Niccolo Machiavelli, The Prince</StyledAuthor>
+            </QuoteBox>
+            </QuoteContainer>
     
         </div>
     )
